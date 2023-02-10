@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventsFragment">
+
+    <ImageView
+        android:id="@+id/ivPhotoF"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kitty" />
+
+
+    <Spinner
+        android:id="@+id/spinnerPetsF"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:entries="@array/pets"
+        app:layout_constraintEnd_toEndOf="@+id/ivPhotoF"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivPhotoF"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhotoF" />
+
+    <EditText
+        android:id="@+id/edSetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerPetsF"
+        app:layout_constraintStart_toStartOf="@+id/spinnerPetsF"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPetsF" />
+
+    <EditText
+        android:id="@+id/edSetAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Age"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edSetName"
+        app:layout_constraintStart_toStartOf="@+id/edSetName"
+        app:layout_constraintTop_toBottomOf="@+id/edSetName" />
+
+    <EditText
+        android:id="@+id/edSetWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Weight"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edSetAge"
+        app:layout_constraintStart_toStartOf="@+id/edSetAge"
+        app:layout_constraintTop_toBottomOf="@+id/edSetAge" />
+
+    <EditText
+        android:id="@+id/edSetHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Height"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edSetWeight"
+        app:layout_constraintStart_toStartOf="@+id/edSetWeight"
+        app:layout_constraintTop_toBottomOf="@+id/edSetWeight" />
+
+    <Button
+        android:id="@+id/btRegisterF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/button_background_color"
+        android:text="@string/btRegister"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edSetHeight"
+        app:layout_constraintStart_toStartOf="@+id/edSetHeight"
+        app:layout_constraintTop_toBottomOf="@+id/edSetHeight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

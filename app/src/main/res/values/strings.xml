@@ -1,0 +1,56 @@
+<resources>
+    <!--UI name & hint & Info -->
+    <string name="app_name">My Pets</string>
+    <string name="btRegister">Register</string>
+    <string name="Name">Name</string>
+    <string name="Age">Age</string>
+    <string name="Weight">Weight</string>
+    <string name="Height">Height</string>
+    <string name="VaccineDate">Vaccination Date</string>
+    <string name="btEdit">Edit</string>
+    <string name="homeFragmentTitle">Home</string>
+    <string name="petsFragmentTitle">Pets</string>
+    <string name="BMI">BMI Test</string>
+    <string name="btCheck">Check</string>
+    <string name="tvSelectPet">Select pet</string>
+    <string name="tvLevelBMI">Level: </string>
+    <string name="tvPointBMI">Point: </string>
+    <string name="weightToHeight">Weight to height </string>
+    <string name="vaccineDo">Your pet don`t need the vaccine yet</string>
+    <string name="vaccineDont">Your pet need the vaccine</string>
+    <string name="setDateVaccine">Go to page `Pets` and set vaccine date for pet</string>
+
+
+    <!--Type Spinner-->
+    <string-array name="pets">
+        <item>Cat</item>
+        <item>Dog</item>
+    </string-array>
+
+    <!--Warning-->
+    <string name="registrationWarning">No one field should be empty!</string>
+
+    <!--Pets-->
+    <string name="typeCat">Cat</string>
+    <string name="typeDog">Dog</string>
+
+    <!--Fail-->
+    <string name="videoPlayerFailed">Video player Failed</string>
+
+    <!--Questions-->
+    <string name="deleteQuestion">Do you want delete current pet?</string>
+    <string name="editQuestion">Do you want edit current pet?</string>
+
+    <!--Option-->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--Message Done-->
+    <string name="doneRegistering">Registered</string>
+    <string name="doneDeleting">Deleted</string>
+    <string name="doneEditing">Edited</string>
+
+    <!--API KEYS-->
+    <string name="API_KEY" translatable="false">AIzaSyAfyr8Mw-4OO3YCN9HLHrAv2q8aYMAqj2g</string>
+
+</resources>

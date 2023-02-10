@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--UI name & hint-->
+    <string name="app_name">My Pets</string>
+    <string name="btRegister">Зареєструвати</string>
+    <string name="Name">І\`мя</string>
+    <string name="Age">Вік</string>
+    <string name="Weight">Вага</string>
+    <string name="Height">Ріст</string>
+    <string name="btEdit">Редагувати</string>
+    <string name="homeFragmentTitle">Дім</string>
+    <string name="petsFragmentTitle">Улюбленці</string>
+    <string name="BMI">Тест ІМТ</string>
+    <string name="btCheck">Перевірити</string>
+
+    <!--Type Spinner-->
+    <string-array name="pets">
+        <item>Кіт</item>
+        <item>Пес</item>
+    </string-array>
+
+    <!--Warning-->
+    <string name="registrationWarning">Поля не повинні бути пустими!</string>
+
+    <!--Pets-->
+    <string name="typeCat">Кіт</string>
+    <string name="typeDog">Пес</string>
+
+    <!--Fail-->
+    <string name="videoPlayerFailed">Відео програвач зламаний</string>
+
+    <!--Questions-->
+    <string name="deleteQuestion">Ви дійсно хочете втратити дані улюбленця?</string>
+    <string name="editQuestion">Ви дійсно хочете змінити дані улюбленця?</string>
+
+    <!--Option-->
+    <string name="yes">Так</string>
+    <string name="no">Ні</string>
+
+    <!--Message Done-->
+    <string name="doneRegistering">Зареєстровано</string>
+    <string name="doneDeleting">Видалено</string>
+    <string name="doneEditing">Змінено</string>
+
+    <string name="tvSelectPet">Виберіть улюбленця</string>
+    <string name="tvLevelBMI">"Рівень: "</string>
+    <string name="tvPointBMI">"Бал: "</string>
+    <string name="weightToHeight">Відношення вагти до тіла</string>
+    <string name="vaccineDo">Ваш улюбленець поки не потребує вакцини</string>
+    <string name="vaccineDont">Ваш улюбленець потребує вакцину</string>
+    <string name="setDateVaccine">Перейдіть на сторінку Pets та встановіть дату вакцинації</string>
+    <string name="VaccineDate">Дата вакцинації</string>
+</resources>
