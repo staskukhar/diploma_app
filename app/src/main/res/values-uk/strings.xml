@@ -50,4 +50,5 @@
     <string name="vaccineDont">Ваш улюбленець потребує вакцину</string>
     <string name="setDateVaccine">Перейдіть на сторінку Pets та встановіть дату вакцинації</string>
     <string name="VaccineDate">Дата вакцинації</string>
+    <string name="invalidDateFormat">Хибний формат дати</string>
 </resources>

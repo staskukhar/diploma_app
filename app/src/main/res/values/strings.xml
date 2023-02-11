@@ -19,6 +19,7 @@
     <string name="vaccineDo">Your pet don`t need the vaccine yet</string>
     <string name="vaccineDont">Your pet need the vaccine</string>
     <string name="setDateVaccine">Go to page `Pets` and set vaccine date for pet</string>
+    <string name="invalidDateFormat">Invalid date format </string>
 
 
     <!--Type Spinner-->

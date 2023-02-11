@@ -75,13 +75,18 @@ class PetSelector : AppCompatActivity(), PetAdapter.Listener {
     @RequiresApi(Build.VERSION_CODES.O)
     private fun showResultVaccineCheck(pet: Pet) {
         if(pet.vaccineDate != null){
-            var currentDate = LocalDate.now()
-            val period = Period.between(LocalDate.parse(pet.vaccineDate), currentDate)
-            if(isVaccineDo(period)) {
-                Toast.makeText(this, getString(R.string.vaccineDo), Toast.LENGTH_LONG).show()
+            try{
+                var currentDate = LocalDate.now()
+                val period = Period.between(LocalDate.parse(pet.vaccineDate), currentDate)
+                if(isVaccineDo(period)) {
+                    Toast.makeText(this, getString(R.string.vaccineDo), Toast.LENGTH_LONG).show()
+                }
+                else {
+                    Toast.makeText(this, getString(R.string.vaccineDont), Toast.LENGTH_LONG).show()
+                }
             }
-            else{
-                Toast.makeText(this, getString(R.string.vaccineDont), Toast.LENGTH_LONG).show()
+            catch (e: Exception){
+                Toast.makeText(this, getString(R.string.invalidDateFormat), Toast.LENGTH_LONG).show()
             }
         }
         else{
