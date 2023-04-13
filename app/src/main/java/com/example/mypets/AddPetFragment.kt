@@ -46,7 +46,7 @@ class EventsFragment : Fragment() {
             else {
                 val pet = Pet(null ,binding.edSetName.text.toString(),
                     binding.spinnerPetsF.selectedItem.toString(),
-                    binding.edSetAge.text.toString().toInt(),
+                    binding.edSetAge.text.toString().toDouble(),
                     binding.ivPhotoF.drawToBitmap(),
                     binding.edSetWeight.text.toString().toDouble(),
                     binding.edSetHeight.text.toString().toDouble(),

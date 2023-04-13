@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DogVitaminsFragment"
+    android:background="@color/middle_blue">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundTint="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:foregroundTint="@color/black"
+                android:text="Вітаміни для собак"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:foregroundTint="@color/black"
+                android:text="Собакам, як і людям, потрібні різні вітаміни для забезпечення здорового функціонування організму. Ось декілька найважливіших вітамінів для собак:\n\n
+1. Вітамін A - необхідний для здоров'я очей, шкіри та імунної системи собак. Цей вітамін зазвичай знаходиться в м'ясі, печінці та рибі.\n
+2. Вітамін D - важливий для здорового розвитку кісток та зубів. Цей вітамін можна знайти в рибі, яєчному жовтку та печінці. \n
+
+3. Вітамін E - антиоксидант, який допомагає захищати клітини від пошкоджень та підтримує здоров'я шкіри та м'язів. Вітамін E міститься в олії з рицинового дерева, оливковій олії та кунжутній олії.\n
+
+4. Вітамін К - необхідний для здорової коагуляції крові. Він зазвичай міститься в зеленому листі салату, шпинату та інших зелених овочах.\n
+
+5. Вітамін С - підтримує здоров'я імунної системи та захищає клітини від пошкоджень. Він міститься в багатьох фруктах та овочах, таких як апельсини, грейпфрути, ківі та перці.\n\n
+Більшість комерційних кормів для собак містять достатню кількість вітамінів для забезпечення здорового життя. Однак, якщо собака харчується домашньою їжею, може бути необхідно додаткові вітаміни до її раціону. Проте, перед тим, як додавати будь-які вітаміни до раціону своєї собаки, важливо проконсультуватися з ветеринаром, щоб дізнатися, які вітаміни є необхідними для вашої конкретної собаки і в якій дозі їх слід додавати. Також важливо пам'ятати, що перевищення доз вітамінів може бути шкідливим для здоров'я собаки, тому слід дотримуватися рекомендацій ветеринара." />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,8 @@
     <string name="Weight">Weight</string>
     <string name="Height">Height</string>
     <string name="VaccineDate">Vaccination Date</string>
+    <string name="btAbotDogs">More about dogs</string>
+    <string name="btAboutCats">More about cats</string>
     <string name="btEdit">Edit</string>
     <string name="homeFragmentTitle">Home</string>
     <string name="petsFragmentTitle">Pets</string>
@@ -53,5 +55,10 @@
 
     <!--API KEYS-->
     <string name="API_KEY" translatable="false">AIzaSyAfyr8Mw-4OO3YCN9HLHrAv2q8aYMAqj2g</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="schedule_notification">Notify</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

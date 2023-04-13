@@ -51,4 +51,9 @@
     <string name="setDateVaccine">Перейдіть на сторінку Pets та встановіть дату вакцинації</string>
     <string name="VaccineDate">Дата вакцинації</string>
     <string name="invalidDateFormat">Хибний формат дати</string>
+    <string name="btAbotDogs">Більше про собак</string>
+    <string name="btAboutCats">Більше про котів</string>
+    <string name="title">Заголовок</string>
+    <string name="message">Нагадування</string>
+    <string name="schedule_notification">Запам\'ятати</string>
 </resources>

@@ -49,20 +49,14 @@ class PetSelector : AppCompatActivity(), PetAdapter.Listener {
         val extras = intent.extras
         processingRequest(extras!!.getInt(Constace.PetKey), pet)
     }
-    private fun getBMIForDog(pet: Pet?): Double?{
+    private fun computeBMI(pet: Pet?): Double?{
         if (pet != null) {
             return (pet.weight / 0.45) / (pet.height / 2.54)
         }
         return 0.0
     }
-    private fun getBMI(pet: Pet?): Double?{
-        when(pet?.type){
-            Constace.DogEU, Constace.DogUA -> return getBMIForDog(pet)
-        }
-        return 0.0
-    }
     private fun showResultBMICheck(pet: Pet) {
-        Toast.makeText(this, "${getString(R.string.weightToHeight)}: ${String.format("%.1f",getBMI(pet))}", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "${getString(R.string.weightToHeight)}: ${String.format("%.1f",computeBMI(pet))}", Toast.LENGTH_LONG).show();
     }
     @RequiresApi(Build.VERSION_CODES.O)
     private fun processingRequest(code: Int, pet: Pet){

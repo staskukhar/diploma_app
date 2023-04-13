@@ -50,7 +50,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/Age"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/edSetName"
         app:layout_constraintStart_toStartOf="@+id/edSetName"

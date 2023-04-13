@@ -40,7 +40,7 @@ class ActivityEditPet : AppCompatActivity() {
             else {
                 val pet = Pet(petId,activity.edNameValue.text.toString(),
                     activity.spinnerPetsType.selectedItem.toString(),
-                    activity.edAgeValue.text.toString().toInt(),
+                    activity.edAgeValue.text.toString().toDouble(),
                     activity.ivPhoto.drawToBitmap(),
                     activity.edWeightValue.text.toString().toDouble(),
                     activity.edHeightValue.text.toString().toDouble(),

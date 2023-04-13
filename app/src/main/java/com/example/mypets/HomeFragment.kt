@@ -32,6 +32,18 @@ class HomeFragment : Fragment() {
                 putExtra(Constace.PetKey, RequestCode.VaccineTest)
             })
         }
+        binding.ibAddShedule.setOnClickListener {
+            startActivity(Intent(requireContext(), ScheduleActivity::class.java))
+        }
+        binding.btAboutDogs.setOnClickListener {
+            startActivity(Intent(requireContext(), AboutDogs::class.java))
+        }
+        binding.btAboutCats.setOnClickListener {
+            startActivity(Intent(requireContext(), AboutCats::class.java))
+        }
+        binding.ibAboutVitamins.setOnClickListener {
+            startActivity(Intent(requireContext(), ActivityAboutVitamins::class.java))
+        }
     }
 
     override fun onResume() {

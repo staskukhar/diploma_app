@@ -18,39 +18,88 @@
     </androidx.recyclerview.widget.RecyclerView>
 
     <ScrollView
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rvMediaContent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/rvMediaContent">
 
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/imbttBMITest"
-                android:layout_width="175dp"
-                android:layout_height="175dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
-                android:src="@drawable/bmi" />
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1">
 
-            <ImageView
-                android:id="@+id/imbttVaccineTest"
-                android:layout_width="175dp"
-                android:layout_height="175dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
-                android:src="@drawable/vaccinated" />
+                <TableRow android:layout_width="fill_parent">
 
-        </TableRow>
+                    <ImageView
+                        android:id="@+id/imbttVaccineTest"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/vaccinated"
+                        tools:ignore="SpeakableTextPresentCheck"/>
+
+                    <ImageButton
+                        android:id="@+id/imbttBMITest"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bmi"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/ibAddShedule"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/schedule"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                    <ImageButton
+                        android:id="@+id/ibAboutVitamins"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/vitamins"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btAboutDogs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/button_background_color"
+                        android:text="@string/btAbotDogs"
+                        app:cornerRadius="8dp" />
+
+                    <Button
+                        android:id="@+id/btAboutCats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/button_background_color"
+                        android:text="@string/btAboutCats"
+                        app:cornerRadius="8dp" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

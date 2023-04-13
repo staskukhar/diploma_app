@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mCats"
+        android:icon="@drawable/kitty"
+        android:title="@string/typeCat"
+        android:orderInCategory="2"
+        />
+    <item
+        android:id="@+id/mDogs"
+        android:icon="@drawable/corgi"
+        android:title="@string/typeDog"
+        android:orderInCategory="1"
+        />
+</menu>
